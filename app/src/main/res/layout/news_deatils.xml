@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDeatils"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World's richest 1% emit as much carbon as bottom two-thirds: report"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#00838F"
+            android:padding="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="#65000000"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/relativeLayCover"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The richest one percent of the global population are responsible for the same amount of carbon emissions as the world's poorest two-thirds, or five billion people, according to an analysis published Sunday by the non-profit Oxfam International."
+                android:gravity="left"
+                android:padding="10dp"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/floatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFAB40"
+        android:src="@drawable/voice_icon"
+
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+</RelativeLayout>
